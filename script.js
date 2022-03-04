@@ -15,6 +15,13 @@ function staticLoadPlaces() {
                 lng: 21.909718,
             },
         },
+        {
+            name: 'plateia',
+            location: {
+                lat: 39.364812,
+                lng: 21.923701,
+            },
+        },
     ];
 }
 
