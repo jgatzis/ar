@@ -15,6 +15,13 @@ function staticLoadPlaces() {
                 lng: 21.92798,
             },
         },
+       {
+            name: 'lyk2',
+            location: {
+                lat: 39.375478,
+                lng: 21.909718,
+            },
+        },
     ];
 }
 
