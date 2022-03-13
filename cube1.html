@@ -1,13 +1,11 @@
 <!DOCTYPE html>
 <head>
-    <script src="https://aframe.io/releases/0.9.0/aframe.min.js"></script>
-    <script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.6.2/aframe/build/aframe-ar.js"> </script>
-    <script src="https://rvdleun.github.io/aframe-arcube/dist/aframe-arcube.min.js"></script>
+    <script src="../vendor/aframe.min.js"></script>
+    <script src="../vendor/aframe-ar.js"> </script>
+    <script src="../vendor/aframe-arcube.min.js"></script>
     <script>
-      THREEx.ArToolkitContext.baseURL = 'https://rawgit.com/jeromeetienne/ar.js/master/three.js/'
+        THREEx.ArToolkitContext.baseURL = 'https://rawgit.com/jeromeetienne/ar.js/master/three.js/'
     </script>
-  </head>
-    
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
     <style>
         .header {
@@ -77,7 +75,7 @@
 
 <a-scene embedded arjs='debugUIEnabled: false; sourceType: webcam; detectionMode: mono;' vr-mode-ui="enabled: false">
     <a-assets>
-        <a-asset-item id="heart" src="https://jgatzis.github.io/ar/heart.gltf"></a-asset-item>
+        <a-asset-item id="heart" src="heart.gltf"></a-asset-item>
     </a-assets>
     <a-arcube>
         <a-entity rotation="180 0 0">
@@ -139,6 +137,5 @@
         console.log(markers);
     });
 </script>
-
 </body>
 </html>
