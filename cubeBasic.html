@@ -12,8 +12,15 @@
     <a-scene embedded arjs='debugUIEnabled: false; sourceType: webcam; detectionMode: mono;' vr-mode-ui="enabled: false">
         <a-arcube>
             <a-box color="red"></a-box>
+          
+             <a-entity ar-cube="scale: 2; timeout: 2000">
+           <a-sphere src="#earth"></a-sphere>
+      </a-entity>
+          
         </a-arcube>
+      
         <a-entity camera></a-entity>
+   
     </a-scene>
   </body>
 </html>
