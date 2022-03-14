@@ -76,17 +76,22 @@
     
 <a-scene embedded arjs='debugUIEnabled: false; sourceType: webcam; detectionMode: mono;' vr-mode-ui="enabled: false">
     <a-assets>
-        <a-asset-item id="heart" src="heart.gltf"></a-asset-item>
+        <a-asset-item id="heart" src="/jaguar/scene.gltf"></a-asset-item>
     </a-assets>
-    <a-entity light="type: directional;
+  <!--  <a-entity light="type: directional;
                    castShadow: true;
                   intensity: 1;
                    shadowCameraVisible: true;" 
             position="-5 3 1.5"> 
     </a-entity>
+-->
     <a-arcube>
-        <a-entity rotation="180 0 0">
-            <a-gltf-model src="#heart" position="-0.57225 2.466 -23.6805" scale=".01875 .01875 .01875" > </a-gltf-model>
+        <a-entity rotation="180 0 0" light="type: directional;
+                   castShadow: true;
+                  intensity: 1;
+                   shadowCameraVisible: true;" 
+            position="-5 3 1.5">
+            <a-gltf-model src="#heart" position="-0.57225 2.466 -23.6805" scale=".01875 .01875 .01875" shadow="cast: true"> </a-gltf-model>
         </a-entity>
       
     </a-arcube>
