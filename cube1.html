@@ -67,27 +67,27 @@
     <h2>Loading assets...</h2>
 </div>
 
-    
+    <!--
 <div class="footer invisible">
     <div class="incorrect">Lung</div>
     <div class="correct">Heart</div>
     <div class="incorrect">Kidneys</div>
 </div>
-
+-->
     
 <a-scene embedded arjs='debugUIEnabled: false; sourceType: webcam; detectionMode: mono;' vr-mode-ui="enabled: false">
     <a-assets>
         <a-asset-item id="heart" src="heart.gltf"></a-asset-item>
     </a-assets>
     <a-entity light="type: directional;
-                   castShadow: true;
+                   castShadow: false;
                    intensity: 0.1;
                    shadowCameraVisible: true;"
             position="-5 3 1.5"> 
     </a-entity>
     <a-arcube>
         <a-entity rotation="180 0 0">
-            <a-gltf-model src="#heart" position="-0.57225 2.466 -23.6805" scale=".01875 .01875 .01875" shadow="cast:false receive: false"> </a-gltf-model>
+            <a-gltf-model src="#heart" position="-0.57225 2.466 -23.6805" scale=".01875 .01875 .01875" shadow="cast:true receive: true"> </a-gltf-model>
         </a-entity>
       
     </a-arcube>
